@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^20.3.3
   '@vitejs/plugin-vue': ^4.1.0
   '@vitejs/plugin-vue-jsx': ^3.0.1
   gsap: ^3.12.2
@@ -16,10 +17,11 @@ dependencies:
   vue: 3.3.4
 
 devDependencies:
+  '@types/node': 20.3.3
   '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.3.4
   '@vitejs/plugin-vue-jsx': 3.0.1_vite@4.3.9+vue@3.3.4
   typescript: 5.1.6
-  vite: 4.3.9
+  vite: 4.3.9_@types+node@20.3.3
   vue-tsc: 1.8.3_typescript@5.1.6
 
 packages:
@@ -556,6 +558,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@types/node/20.3.3:
+    resolution: {integrity: sha512-wheIYdr4NYML61AjC8MKj/2jrR/kDQri/CIpVoZwldwhnIrD/j9jIU5bJ8yBKuB2VhpFV7Ab6G2XkBjv9r9Zzw==}
+    dev: true
+
   /@vitejs/plugin-vue-jsx/3.0.1_vite@4.3.9+vue@3.3.4:
     resolution: {integrity: sha512-+Jb7ggL48FSPS1uhPnJbJwWa9Sr90vQ+d0InW+AhBM22n+cfuYqJZDckBc+W3QSHe1WDvewMZfa4wZOtk5pRgw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -566,7 +572,7 @@ packages:
       '@babel/core': 7.22.5
       '@babel/plugin-transform-typescript': 7.22.5_@babel+core@7.22.5
       '@vue/babel-plugin-jsx': 1.1.5_@babel+core@7.22.5
-      vite: 4.3.9
+      vite: 4.3.9_@types+node@20.3.3
       vue: 3.3.4
     transitivePeerDependencies:
       - supports-color
@@ -579,7 +585,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9
+      vite: 4.3.9_@types+node@20.3.3
       vue: 3.3.4
     dev: true
 
@@ -1019,7 +1025,7 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /vite/4.3.9:
+  /vite/4.3.9_@types+node@20.3.3:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1044,6 +1050,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.3.3
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.26.0
